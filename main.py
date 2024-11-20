@@ -121,7 +121,7 @@ class MainApp:
         self.bbox_colors = np.random.uniform(0, 255, size=(len(self.classes), 3))
 
         self.haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-        self.car_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_car.xml')
+        self.car_cascade = cv2.CascadeClassifier('haarcascade_car.xml')
 
         # Initialize tracking objects
         self.tracker = None
