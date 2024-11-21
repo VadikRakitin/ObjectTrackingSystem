@@ -1,6 +1,6 @@
 # Object Tracking System
 
-Object Tracking System — це програма для відстеження об'єктів за допомогою різних методів трекінгу та нейронних мереж.
+The Object Tracking System is a program designed for real-time object tracking using various tracking methods and neural networks.
 
 ## Features
 1) Real-time object tracking from a camera or video file.
