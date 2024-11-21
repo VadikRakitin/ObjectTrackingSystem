@@ -2,47 +2,46 @@
 
 Object Tracking System — це програма для відстеження об'єктів за допомогою різних методів трекінгу та нейронних мереж.
 
-## Особливості
-- Відстеження об'єктів у реальному часі з камери або відеофайлу.
-- Запис відео та знімки екрану.
-- Використання різних методів трекінгу: SSD Tracker, KCF, MIL, MOSSE.
-- Збереження результатів у вибраній директорії.
-- Порівняння методів за допомогою підрахунку системних тіків.
+## Features
+1) Real-time object tracking from a camera or video file.
+2) Video recording and screenshot capturing.
+3) Multiple tracking methods: SSD Tracker, KCF, MIL, MOSSE.
+4) Save results to a custom directory.
+5) Compare tracking methods by measuring system ticks.
 
-## Вимоги
-Для запуску програми вам потрібен Python та встановлені залежності. Переконайтеся, що у вас встановлено:
-
-- Python 3.8 або новіший
+## Requirements
+To run the program, you need Python and the required dependencies. Ensure you have:
+- Python 3.8 or newer
 - OpenCV
 - NumPy
 - Tkinter
 - PIL (Pillow)
 
-## Установка
-1. Клонувати репозиторій:
+## Installation
+1. Clone the repository:
    git clone https://github.com/VadikRakitin/ObjectTrackingSystem.git
    cd ObjectTrackingSystem
-2. Встановити необхідні залежності:
+2. Install the required dependencies:
    pip install -r requirements.txt
-3. Запустити програму:
+3. Run the program:
    python main.py
 
-## Файли в репозиторії
-  main.py — основний файл програми.
-  MobileNetSSD_deploy.prototxt — конфігурація моделі SSD.
-  MobileNetSSD_deploy.caffemodel — ваги моделі SSD.
-  haarcascade_car.xml - файл каскадного класифікатора для детекції автомобілів.
-  logo.jpg — логотип програми.
-  requirements.txt — список залежностей.
+## Repository Files
+  main.py — the main program file.
+  MobileNetSSD_deploy.prototxt — SSD model configuration file.
+  MobileNetSSD_deploy.caffemodel — SSD model weights.
+  haarcascade_car.xml - Haar cascade classifier file for detecting cars.
+  logo.jpg — program logo.
+  requirements.txt — list of dependencies.
 
-## Використання:
-  1. Вибір джерела відео: виберіть джерело відео — камера або відеофайл, натиснувши відповідну кнопку для зміни джерела.
-  2. Запуск трекінгу: натисніть START, щоб розпочати відстеження об'єктів на відео. Програма почне захоплювати кадри та обчислювати кількість тиків (вимірює час процесора).
-  3. Стоп трекінгу: натисніть STOP, щоб припинити трекінг та зупинити відео.
-  Після цього програма виведе кількість тиків, що вимірюють час обробки відео (кількість тиків визначається за допомогою функції cv2.getTickCount()).
-  4. Запис відео: натисніть кнопку Start/Stop Recording для початку та зупинки запису відео. Записане відео зберігається у вибрану папку з відповідним іменем.
-  5. Знімки екрану: натискайте Screenshot для збереження поточного кадру відео як зображення у вибрану папку.
-  6. Зміна методів трекінгу: використовуйте комбобокс для вибору одного з чотирьох доступних методів трекінгу: SSD Tracker, KCF, MIL, MOSSE.
-  7. Зміна папки збереження: кнопка Change Save Folder дозволяє змінити папку для збереження записаних відео та знімків.
-  8. Зміна джерела відео: використовуйте кнопку Change Source для вибору іншої камери або джерела відео (наприклад, камера з індексом 0, 1, 2...).
+## Usage
+1) Select a video source: Choose the video source (camera or video file) by pressing the corresponding button to switch between sources.
+2) Start tracking: Press START to begin tracking objects in the video. The program will start capturing frames and measure processing time using system ticks.
+3) Stop tracking: Press STOP to stop tracking and pause the video. The program will display the number of system ticks, calculated using cv2.getTickCount(), which measures the video processing time.
+4) Record video: Use the Start/Stop Recording button to begin or end video recording. Recorded videos are saved to the selected folder with an appropriate filename.
+5) Take screenshots: Use the Screenshot button to save the current video frame as an image in the selected folder.
+6) Switch tracking methods: Use the dropdown menu to select one of four available tracking methods: SSD Tracker, KCF, MIL, MOSSE.
+7) Change save folder: Use the Change Save Folder button to specify a folder for saving videos and screenshots.
+8) Change video source: Use the Change Source button to select another camera or video source (e.g., cameras with index 0, 1, 2, etc.).
+
 
